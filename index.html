@@ -3,175 +3,396 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nayeem Hossen Jim | ML Engineer & Game Developer | Portfolio</title>
+    <meta name="description" content="Nayeem Hossen Jim's portfolio covering applied machine learning, AI engineering, and Unreal Engine game development.">
+    <meta name="theme-color" content="#09111f">
+    <title>Nayeem Hossen Jim | AI Engineer & Game Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero section -->
-    <header class="hero">
-        <div class="overlay"></div>
-        <div class="container hero-content">
-            <h1 class="name">Nayeem Hossen Jim</h1>
-            <p class="tagline">Machine Learning Engineer &amp; Game Developer</p>
-            <p class="bio">
-                Accomplished Machine Learning Engineer and Game Developer with a proven track record of delivering robust AI solutions and interactive digital experiences.<br>
-                Expertise in deep learning, computer vision, and real-time systems. Adept at bridging research and production, collaborating across disciplines, and driving innovation from concept to deployment.
-            </p>
-            <div class="contact-info">
-                <a href="mailto:nayeemhossenjim@gmail.com" class="contact-link">📧 Email</a>
-                <a href="https://github.com/NayeemHossenJim" class="btn" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://www.linkedin.com/in/nayeem-hossen-jim" class="btn" target="_blank" rel="noopener">LinkedIn</a>
-            </div>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="#home">Nayeem Hossen Jim</a>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Skills section -->
-    <section class="skills">
-        <div class="container">
-            <h2>Core Competencies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Machine Learning & AI</h3>
-                    <ul>
-                        <li>Deep Learning & Neural Networks</li>
-                        <li>Computer Vision</li>
-                        <li>Natural Language Processing</li>
-                        <li>Data Analysis & Visualization</li>
-                    </ul>
+    <main id="content">
+        <section class="hero section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">AI Engineer • Game Developer • Dhaka, Bangladesh</p>
+                    <h1>Nayeem Hossen Jim</h1>
+                    <p class="lead">I build production-grade AI systems and real-time gameplay systems with the same goal: ship work that is measurable, reliable, and useful.</p>
+                    <p class="summary">AI Engineer and Game Developer with 2+ years of professional experience building and deploying RAG systems, fine-tuning LLMs, and engineering Unreal Engine 5 gameplay mechanics. Skilled in Python, C++, LangChain, LangGraph, and Hugging Face Transformers, with a track record of applying MLOps and LLMOps practices to production work.</p>
+                    <div class="cta-row">
+                        <a class="button primary" href="#projects">View Projects</a>
+                        <a class="button secondary" href="cv.text" download>Download CV</a>
+                    </div>
+                    <div class="social-row" aria-label="External profiles">
+                        <a href="https://github.com/NayeemHossenJim" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://www.linkedin.com/in/nayeem-hossen-jim" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="mailto:nayeemhossenjim@gmail.com">Email</a>
+                        <a href="https://www.kaggle.com/nayeemhossenjim" target="_blank" rel="noopener">Kaggle</a>
+                        <a href="https://medium.com/@nayeemhossenjim" target="_blank" rel="noopener">Medium</a>
+                        <a href="https://orcid.org/0009-0007-2524-7447" target="_blank" rel="noopener">ORCID</a>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li>Python (Advanced)</li>
-                        <li>C++ (Proficient)</li>
-                        <li>C# (Proficient)</li>
-                        <li>JavaScript/HTML/CSS</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Game Development</h3>
-                    <ul>
-                        <li>Unreal Engine 5</li>
-                        <li>Unity Engine</li>
-                        <li>Blueprint Visual Scripting</li>
-                        <li>Game AI & Behavior Systems</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Frameworks</h3>
-                    <ul>
-                        <li>TensorFlow / PyTorch</li>
-                        <li>Jupyter Notebooks</li>
-                        <li>Git Version Control</li>
-                        <li>API Development</li>
-                    </ul>
+                <div class="hero-visual">
+                    <div class="portrait-card">
+                        <div class="portrait-frame">
+                            <img src="Jim.png" alt="Portrait of Nayeem Hossen Jim" class="portrait">
+                        </div>
+                        <div class="portrait-badge">
+                            <span class="badge-label">Current focus</span>
+                            <p>RAG, LLM fine-tuning, Unreal Engine 5, Unity</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects section -->
-    <section class="projects">
-        <div class="container">
-            <h2>Highlighted Projects</h2>
-            <div class="project-row">
-                <!-- Machine Learning -->
-                <article class="project-card">
-                    <img src="Source/ML.jpg" alt="Abstract neural network illustration representing machine learning" class="project-image">
-                    <div class="project-body">
-                        <h3>Machine Learning Portfolio</h3>
-                        <p class="project-lang">Python • Scikit-learn • TensorFlow</p>
-                        <p class="project-description">
-                            Comprehensive machine learning portfolio demonstrating expertise from fundamentals to advanced implementations. 
-                            Features data preprocessing, classical algorithms, deep learning models, and production-ready API development 
-                            with documented best practices.
-                        </p>
-                        <a href="https://github.com/NayeemHossenJim/Machine-Learning" class="project-link" target="_blank" rel="noopener">View Project →</a>
-                    </div>
-                </article>
-                <!-- Deep Learning -->
-                <article class="project-card">
-                    <img src="Source/NN.jpg" alt="Digital brain representing deep learning" class="project-image">
-                    <div class="project-body">
-                        <h3>Deep Learning Implementation</h3>
-                        <p class="project-lang">Python • Jupyter Notebook • CNN</p>
-                        <p class="project-description">
-                            Handwritten digit recognition system using convolutional neural networks. Complete end-to-end implementation 
-                            including data preprocessing, model architecture design, training optimization, and performance evaluation 
-                            with detailed visualizations.
-                        </p>
-                        <a href="https://github.com/NayeemHossenJim/Deep-Learning" class="project-link" target="_blank" rel="noopener">View Project →</a>
-                    </div>
-                </article>
-                <!-- Jarvis -->
-                <article class="project-card">
-                    <img src="Source/jarvis.jpg" alt="Glowing microphone icon representing a voice assistant" class="project-image">
-                    <div class="project-body">
-                        <h3>Jarvis Voice Assistant</h3>
-                        <p class="project-lang">Python • Speech Recognition • NLP</p>
-                        <p class="project-description">
-                            Intelligent voice assistant with speech recognition and text-to-speech capabilities. Features custom command 
-                            processing, web automation, media control, and news integration. Showcases expertise in natural language 
-                            processing and API integration.
-                        </p>
-                        <a href="https://github.com/NayeemHossenJim/Jarvis" class="project-link" target="_blank" rel="noopener">View Project →</a>
-                    </div>
-                </article>
+        <section class="section proof-section" aria-labelledby="proof-title">
+            <div class="container">
+                <div class="section-heading narrow-heading">
+                    <p class="eyebrow">Proof points</p>
+                    <h2 id="proof-title">Quick credibility snapshot</h2>
+                    <p>These numbers come directly from the CV and help recruiters or collaborators verify the scope of the work quickly.</p>
+                </div>
+                <div class="proof-grid">
+                    <article class="proof-card">
+                        <span class="metric-value">2+ years</span>
+                        <p class="metric-label">Professional experience across AI and game development</p>
+                    </article>
+                    <article class="proof-card">
+                        <span class="metric-value">100k+</span>
+                        <p class="metric-label">RAG queries processed per month in production</p>
+                    </article>
+                    <article class="proof-card">
+                        <span class="metric-value">40%</span>
+                        <p class="metric-label">Reduction in inference latency after LoRA and QLoRA fine-tuning</p>
+                    </article>
+                    <article class="proof-card">
+                        <span class="metric-value">91%</span>
+                        <p class="metric-label">Accuracy for the real-time skin cancer detection system</p>
+                    </article>
+                </div>
             </div>
-            <div class="project-row">
-                <!-- AI Enemy Boss -->
-                <article class="project-card">
-                    <img src="Source/AI Boss.png" alt="Dark fantasy boss standing in a dungeon" class="project-image">
-                    <div class="project-body">
-                        <h3>AI Enemy Boss System</h3>
-                        <p class="project-lang">Unreal Engine 5 • Blueprint Visual Scripting</p>
-                        <p class="project-description">
-                            Advanced AI-driven boss encounter system featuring dynamic behavioral patterns, adaptive combat mechanics, 
-                            and intelligent spell-casting algorithms. Demonstrates expertise in game AI design and Unreal Engine's 
-                            Blueprint system architecture.
-                        </p>
-                        <a href="https://github.com/NayeemHossenJim/AI_Enemy_Boss" class="project-link" target="_blank" rel="noopener">View Project →</a>
-                    </div>
-                </article>
-                <!-- Heroes Never Die -->
-                <article class="project-card">
-                    <img src="Source/Hero Never Die.png" alt="Fantasy heroes standing before ruins" class="project-image">
-                    <div class="project-body">
-                        <h3>Heroes Never Die</h3>
-                        <p class="project-lang">Unity • C# • Game Development</p>
-                        <p class="project-description">
-                            Unity-based adventure game developed for BUET Game Jam. Features intuitive character controls, 
-                            engaging storyline, and polished gameplay mechanics. Demonstrates proficiency in Unity engine 
-                            and rapid prototyping skills.
-                        </p>
-                        <a href="https://github.com/NayeemHossenJim/Heroes-Never-Die" class="project-link" target="_blank" rel="noopener">View Project →</a>
-                    </div>
-                </article>
-                <!-- The Last Gods -->
-                <article class="project-card">
-                    <img src="Source/God.png" alt="Adventurer exploring ancient ruins" class="project-image">
-                    <div class="project-body">
-                        <h3>The Last Gods</h3>
-                        <p class="project-lang">C++ • Unreal Engine • Game Architecture</p>
-                        <p class="project-description">
-                            Epic adventure game built with Unreal Engine featuring high-quality visuals, dynamic gameplay mechanics, 
-                            and expansive world design. Demonstrates advanced C++ programming skills and modular game architecture 
-                            for scalable development.
-                        </p>
-                        <a href="https://github.com/NayeemHossenJim/The_Last_Gods" class="project-link" target="_blank" rel="noopener">View Project →</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">About</p>
+                    <h2>Applied work, not filler</h2>
+                    <p>The portfolio is organized around evidence from the CV, public repositories, and practical outcomes so the strongest claims are easy to verify.</p>
+                </div>
+                <div class="about-grid">
+                    <article class="info-card">
+                        <h3>What I build</h3>
+                        <p>RAG applications, LLM fine-tuning workflows, computer vision systems, and gameplay systems that need to work in real use, not just in a demo.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>How I work</h3>
+                        <p>I combine model development, deployment, and iteration with enough software discipline to ship production work without losing speed.</p>
+                    </article>
+                    <article class="info-card snapshot-card">
+                        <h3>Profile snapshot</h3>
+                        <ul class="detail-list">
+                            <li><span>Summary</span>AI Engineer and Game Developer with production RAG and Unreal Engine experience</li>
+                            <li><span>Location</span>Dhaka, Bangladesh</li>
+                            <li><span>Primary stack</span>Python, C++, LangChain, LangGraph, Hugging Face</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Skills</p>
+                    <h2>Core strengths and active focus areas</h2>
+                    <p>The stack below comes from the CV and reflects both the day-to-day engineering work and the tools used to ship the projects.</p>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3>Programming Languages</h3>
+                        <ul class="chip-list">
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>C</li>
+                            <li>C#</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>AI & Machine Learning</h3>
+                        <ul class="chip-list">
+                            <li>LangChain</li>
+                            <li>LangGraph</li>
+                            <li>Hugging Face Transformers</li>
+                            <li>TensorFlow</li>
+                            <li>PyTorch</li>
+                            <li>RAG Systems</li>
+                            <li>LoRA</li>
+                            <li>QLoRA</li>
+                            <li>Unsloth</li>
+                            <li>YOLO</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>MLOps & LLOps</h3>
+                        <ul class="chip-list">
+                            <li>MLflow</li>
+                            <li>DVC</li>
+                            <li>Docker</li>
+                            <li>CI/CD Pipelines</li>
+                            <li>Model Versioning</li>
+                            <li>Experiment Tracking</li>
+                            <li>Production Monitoring</li>
+                            <li>n8n</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Game Development</h3>
+                        <ul class="chip-list">
+                            <li>Unreal Engine 5</li>
+                            <li>C++ Gameplay Systems</li>
+                            <li>Blueprints</li>
+                            <li>Unity</li>
+                            <li>Blender</li>
+                            <li>ShaderLab</li>
+                            <li>HLSL</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Databases & APIs</h3>
+                        <ul class="chip-list">
+                            <li>PostgreSQL</li>
+                            <li>pgvector</li>
+                            <li>MySQL</li>
+                            <li>FastAPI</li>
+                            <li>REST APIs</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Developer Tools</h3>
+                        <ul class="chip-list">
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>VS Code</li>
+                            <li>Google Colab</li>
+                            <li>Kaggle</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Featured Projects</p>
+                    <h2>Projects selected from the CV and public repos</h2>
+                    <p>The five cards below are the projects you asked to surface. They are ordered to lead with AI depth, then show the Unreal Engine work.</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-visual project-visual--cyan">
+                            <span class="project-index">01</span>
+                            <p class="project-track">Transformer engineering</p>
+                            <h3>LLM From Scratch</h3>
+                            <p>PyTorch • Python</p>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-meta">Foundational language model build</p>
+                            <p>Built a GPT-3-architecture language model from scratch in PyTorch and fine-tuned it for personal assistant tasks.</p>
+                            <ul class="project-points">
+                                <li>Custom SimpleTokenizerV2 with regex-based cleaning, vocabulary mapping, and unknown token handling.</li>
+                                <li>Processed 50,000+ tokens per second on consumer hardware.</li>
+                            </ul>
+                            <a href="https://github.com/NayeemHossenJim/LLM-From-Scratch" class="project-link" target="_blank" rel="noopener">View repository</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-visual project-visual--violet">
+                            <span class="project-index">02</span>
+                            <p class="project-track">Efficient fine-tuning</p>
+                            <h3>Fine Tune LLM</h3>
+                            <p>Unsloth • Hugging Face • LoRA</p>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-meta">Parameter-efficient adaptation</p>
+                            <p>Applied LoRA and QLoRA to fine-tune large language models with a lighter training footprint and faster iteration cycles.</p>
+                            <ul class="project-points">
+                                <li>Reduced GPU memory usage by 60% compared with full fine-tuning baselines.</li>
+                                <li>Cut training time to less than 20 minutes for new fine-tuning jobs.</li>
+                            </ul>
+                            <a href="https://github.com/NayeemHossenJim/Finetuning-Local-LLM" class="project-link" target="_blank" rel="noopener">View repository</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-visual project-visual--emerald">
+                            <span class="project-index">03</span>
+                            <p class="project-track">Computer vision deployment</p>
+                            <h3>Skin Cancer Detection</h3>
+                            <p>YOLO • FastAPI • JavaScript</p>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-meta">Real-time medical vision system</p>
+                            <p>Developed a full-stack skin cancer detection system with model deployment, API integration, and a browser-based frontend.</p>
+                            <ul class="project-points">
+                                <li>Reached 91% detection accuracy across 5 cancer categories in the test dataset.</li>
+                                <li>Deployed on a VPS with sub-200 ms inference for live use.</li>
+                            </ul>
+                            <a href="https://github.com/NayeemHossenJim/Skin-Cancer-Detection" class="project-link" target="_blank" rel="noopener">View repository</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-visual project-visual--amber">
+                            <span class="project-index">04</span>
+                            <p class="project-track">Multiplayer systems</p>
+                            <h3>Multiplayer Plugin</h3>
+                            <p>Unreal Engine 5 • C++</p>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-meta">Modular networking plugin</p>
+                            <p>Built a modular multiplayer plugin in C++ for Unreal Engine with a focus on reusable architecture and multiplayer readiness.</p>
+                            <ul class="project-points">
+                                <li>Designed for Steam and Xbox-style multiplayer integration paths.</li>
+                                <li>Structured to support reusable plugin-based workflows.</li>
+                            </ul>
+                            <a href="https://github.com/NayeemHossenJim/MultiPlayer-Plugin" class="project-link" target="_blank" rel="noopener">View repository</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-visual project-visual--rose">
+                            <span class="project-index">05</span>
+                            <p class="project-track">Game architecture</p>
+                            <h3>The Last Gods</h3>
+                            <p>Unreal Engine 5 • C++ • Blueprints</p>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-meta">Third-person action game</p>
+                            <p>Developed a third-person action game in Unreal Engine 5 with dynamic combat, responsive controls, and immersive gameplay systems.</p>
+                            <ul class="project-points">
+                                <li>State-machine-driven enemy boss AI with 8 distinct attack patterns.</li>
+                                <li>Reduced player loop repetition by 50% in playtesting sessions.</li>
+                            </ul>
+                            <a href="https://github.com/NayeemHossenJim/The_Last_Gods" class="project-link" target="_blank" rel="noopener">View repository</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="container timeline-layout">
+                <div class="section-heading">
+                    <p class="eyebrow">Experience</p>
+                    <h2>Current roles and measurable impact</h2>
+                    <p>The experience section is written from the CV and focuses on outcomes, metrics, and the tools used to ship the work.</p>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <p class="timeline-date">January 2023 - Present</p>
+                        <h3>Junior AI Engineer | Softvence Delta, Dhaka, Bangladesh</h3>
+                        <ul class="feature-list">
+                            <li>Architected and deployed production-grade RAG systems using LangChain and LangGraph, processing 100,000+ queries per month and driving a 30% increase in automated customer issue resolution.</li>
+                            <li>Fine-tuned Hugging Face Transformer models with LoRA and QLoRA for domain-specific NLP tasks, achieving a 40% reduction in inference latency and measurable gains in task accuracy.</li>
+                            <li>Established MLOps best practices across MLflow, DVC, CI/CD pipelines, and production monitoring, cutting deployment errors by 25%.</li>
+                            <li>Built AI automation workflows with n8n and 10+ third-party API integrations to remove manual data-handling steps.</li>
+                            <li>Developed a Bangla Sign Language detection model at the alphabet level using a custom YOLO dataset, reaching 87% detection accuracy in live-camera tests.</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-item">
+                        <p class="timeline-date">November 2025 - Present</p>
+                        <h3>Unreal Engine Gameplay Programmer | Studio Aloukik, Dhaka, Bangladesh</h3>
+                        <ul class="feature-list">
+                            <li>Engineered core gameplay systems in Unreal Engine 5 using C++ and Blueprints, including melee combat, animation state machines, hit detection, and cinematic camera control for 3 active client projects.</li>
+                            <li>Delivered 4 functional prototypes on schedule, each with God-of-War-inspired combat mechanics, reducing client feedback revision cycles by an estimated 35%.</li>
+                            <li>Contributed to a Bangladesh-themed horror title and the Masud Rana narrative game in collaboration with Sheba Prokashoni, authoring 5+ gameplay systems shipped to internal review.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Education & Certifications</p>
+                    <h2>Formal background and recognized training</h2>
+                    <p>The education and certification details are pulled directly from the CV so the portfolio can stand on the same facts a reviewer would expect to see in a résumé.</p>
+                </div>
+                <div class="credentials-grid">
+                    <article class="info-card">
+                        <h3>Education</h3>
+                        <ul class="feature-list compact-list">
+                            <li>B.Sc. in Computer Science and Engineering, Uttara University, Dhaka, Bangladesh</li>
+                            <li>CGPA: 3.5 / 4.0</li>
+                        </ul>
+                    </article>
+                    <article class="info-card">
+                        <h3>Certifications</h3>
+                        <ul class="feature-list compact-list">
+                            <li>AWS AI Practitioner Challenge – Udacity</li>
+                            <li>Advanced Learning Algorithms – Stanford University (Coursera)</li>
+                            <li>Supervised Machine Learning: Regression and Classification – Stanford University (Coursera)</li>
+                        </ul>
+                    </article>
+                    <article class="info-card">
+                        <h3>Awards & Leadership</h3>
+                        <ul class="feature-list compact-list">
+                            <li>12th Place – Game Jam Competition, BUET CSE Fest 2024</li>
+                            <li>Former Vice President – Machine Learning Club, Uttara University</li>
+                            <li>Leadership role held until January 2025</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="contact-panel">
+                    <div>
+                        <p class="eyebrow">Contact</p>
+                        <h2>Use the quickest verification path</h2>
+                        <p>GitHub shows the code, LinkedIn shows the profile, and the CV covers the rest. If you need a quick review trail, start with the links below.</p>
+                    </div>
+                    <div class="contact-actions">
+                        <a class="primary" href="mailto:nayeemhossenjim@gmail.com">Email</a>
+                        <a href="https://github.com/NayeemHossenJim" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://www.linkedin.com/in/nayeem-hossen-jim" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://www.kaggle.com/nayeemhossenjim" target="_blank" rel="noopener">Kaggle</a>
+                        <a href="https://medium.com/@nayeemhossenjim" target="_blank" rel="noopener">Medium</a>
+                        <a href="https://orcid.org/0009-0007-2524-7447" target="_blank" rel="noopener">ORCID</a>
+                        <a href="cv.text" download>Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Nayeem Hossen Jim &nbsp;|&nbsp; Portfolio Website &nbsp;|&nbsp; 
-            <a href="mailto:nayeemhossenjim@gmail.com" class="footer-link">Email</a> &nbsp;|&nbsp; 
-            <a href="https://github.com/NayeemHossenJim" class="footer-link" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp; 
-            <a href="https://www.linkedin.com/in/nayeem-hossen-jim" class="footer-link" target="_blank" rel="noopener">LinkedIn</a></p>
+        <div class="container footer-inner">
+            <p>&copy; 2026 Nayeem Hossen Jim. Portfolio built from the CV, public GitHub, LinkedIn, and résumé references.</p>
+            <div class="footer-links">
+                <a href="#home">Top</a>
+                <a href="https://github.com/NayeemHossenJim" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/nayeem-hossen-jim" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
         </div>
     </footer>
 </body>
