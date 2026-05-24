@@ -1,357 +1,680 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nayeem Hossen Jim's portfolio covering applied machine learning, AI engineering, and Unreal Engine game development.">
-    <meta name="theme-color" content="#000000">
-    <title>Nayeem Hossen Jim | AI Engineer & Game Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nayeem Hossen Jim</title>
+  <meta name="description"
+    content="Nayeem Hossen Jim — AI Engineer & Game Developer. RAG systems, LLM fine-tuning, Unreal Engine 5 gameplay." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Iceland&family=Iceberg&family=Big+Shoulders+Display:wght@700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <a class="skip-link" href="#content">Skip to content</a>
+  <div class="hud" data-screen-label="01 Portfolio HUD">
+
+    <!-- =================== TOP BAR =================== -->
     <header class="topbar">
-        <div class="container topbar-inner">
-            <a class="brand" href="#home">Nayeem Hossen Jim</a>
-            <nav class="site-nav" aria-label="Primary">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-            </nav>
-        </div>
+      <div class="stat stat-level">
+        <span class="big">24</span>
+        <span class="lbl">Level</span>
+      </div>
+
+      <div class="coin-pill">
+        <span class="plus">+</span>
+        <span class="big">100,425</span>
+        <span class="lbl">RAG queries / mo</span>
+      </div>
+
+      <nav class="topbar-meta" aria-label="Status">
+        <span><span class="k">// Build</span><span class="v">v2026.05</span></span>
+        <span><span class="k">// Server</span><span class="v">SOFTVENCE–Δ</span></span>
+        <span><span class="k">// Local</span><span class="v" id="local-time">--:--</span></span>
+        <span><span class="k">// UTC+06</span><span class="v">DHAKA</span></span>
+      </nav>
     </header>
 
-    <main id="content">
-        <section class="hero section" id="home">
-            <div class="container hero-grid">
-                <div class="hero-copy">
-                    <p class="eyebrow">AI Engineer • Game Developer • Dhaka, Bangladesh</p>
-                    <h1>Nayeem Hossen Jim</h1>
-                    <p class="lead">I build AI systems and gameplay systems that are meant to ship.</p>
-                    <p class="summary">AI Engineer and Game Developer with 1+ year of experience building and deploying RAG systems, fine-tuning LLMs, and engineering Unreal Engine 5 gameplay mechanics. Skilled in Python, C++, LangChain, LangGraph, and Hugging Face Transformers, with applied MLOps and LLMOps experience in production work.</p>
-                    <div class="cta-row">
-                        <a class="button primary" href="#projects">View Projects</a>
-                        <a class="button secondary" href="Nayeem%20Hossen%20Jim%20Resume.pdf" download="Nayeem Hossen Jim Resume.pdf">Download Resume</a>
-                    </div>
-                    <div class="social-row" aria-label="External profiles">
-                        <a href="https://github.com/NayeemHossenJim" target="_blank" rel="noopener">GitHub</a>
-                        <a href="https://www.linkedin.com/in/nayeem-hossen-jim" target="_blank" rel="noopener">LinkedIn</a>
-                        <a href="mailto:nayeemhossenjim@gmail.com">Email</a>
-                        <a href="https://www.kaggle.com/nayeemhossenjim" target="_blank" rel="noopener">Kaggle</a>
-                        <a href="https://medium.com/@nayeemhossenjim" target="_blank" rel="noopener">Medium</a>
-                        <a href="https://orcid.org/0009-0007-2524-7447" target="_blank" rel="noopener">ORCID</a>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="portrait-card">
-                        <div class="portrait-frame">
-                            <img src="Jim.png" alt="Portrait of Nayeem Hossen Jim" class="portrait">
-                        </div>
-                        <div class="portrait-badge">
-                            <span class="badge-label">Current focus</span>
-                            <p>RAG, LLM fine-tuning, Unreal Engine 5, Unity</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- =================== LEFT RAIL =================== -->
+    <aside class="left">
+      <div class="portrait-frame">
+        <img src="assets/jim.png" alt="Nayeem Hossen Jim" />
+        <span class="brackets" aria-hidden="true"><span></span></span>
+        <span class="portrait-id">// ID · 0917-NHJ</span>
+      </div>
 
-        <section class="section proof-section" aria-labelledby="proof-title">
-            <div class="container">
-                <div class="section-heading narrow-heading">
-                    <p class="eyebrow">Proof points</p>
-                    <h2 id="proof-title">Impact at a glance</h2>
-                </div>
-                <div class="proof-grid">
-                    <article class="proof-card">
-                        <span class="metric-value">1+ year</span>
-                        <p class="metric-label">Professional experience across AI and game development</p>
-                    </article>
-                    <article class="proof-card">
-                        <span class="metric-value">40%</span>
-                        <p class="metric-label">Reduction in inference latency after LoRA and QLoRA fine-tuning</p>
-                    </article>
-                    <article class="proof-card">
-                        <span class="metric-value">91%</span>
-                        <p class="metric-label">Accuracy for the real-time skin cancer detection system</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <div class="field">
+        <span class="field-label">// Name</span>
+        <span class="field-value white">Nayeem Hossen Jim</span>
+      </div>
 
-        <section class="section" id="about">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">About</p>
-                    <h2>Built for production outcomes</h2>
-                </div>
-                <div class="about-grid">
-                    <article class="info-card">
-                        <h3>What I build</h3>
-                        <p>RAG applications, LLM fine-tuning workflows, computer vision systems, and gameplay systems that need to work in real use, not just in a demo.</p>
-                    </article>
-                    <article class="info-card">
-                        <h3>How I work</h3>
-                        <p>I combine model development, deployment, and iteration with enough software discipline to ship production work without losing speed.</p>
-                    </article>
-                    <article class="info-card snapshot-card">
-                        <h3>Profile snapshot</h3>
-                        <ul class="detail-list">
-                            <li><span>Summary</span>AI Engineer and Game Developer with production RAG, fine-tuning, and Unreal Engine experience</li>
-                            <li><span>Location</span>Dhaka, Bangladesh</li>
-                            <li><span>Primary stack</span>Python, C++, LangChain, LangGraph, Hugging Face</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <div class="field">
+        <span class="field-label">// Occupation</span>
+        <span class="field-value">AI Engineer / Game Dev</span>
+      </div>
 
-        <section class="section" id="skills">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Skills</p>
-                    <h2>Core strengths</h2>
-                </div>
-                <div class="skills-grid">
-                    <article class="skill-card">
-                        <h3>Programming Languages</h3>
-                        <ul class="chip-list">
-                            <li>Python</li>
-                            <li>C++</li>
-                            <li>C</li>
-                            <li>C#</li>
-                        </ul>
-                    </article>
-                    <article class="skill-card">
-                        <h3>AI & Machine Learning</h3>
-                        <ul class="chip-list">
-                            <li>LangChain</li>
-                            <li>LangGraph</li>
-                            <li>Hugging Face Transformers</li>
-                            <li>TensorFlow</li>
-                            <li>PyTorch</li>
-                            <li>RAG Systems</li>
-                            <li>LoRA</li>
-                            <li>QLoRA</li>
-                            <li>Unsloth</li>
-                            <li>YOLO</li>
-                        </ul>
-                    </article>
-                    <article class="skill-card">
-                        <h3>MLOps & LLMOps</h3>
-                        <ul class="chip-list">
-                            <li>MLflow</li>
-                            <li>DVC</li>
-                            <li>Docker</li>
-                            <li>CI/CD Pipelines</li>
-                            <li>Model Versioning</li>
-                            <li>Experiment Tracking</li>
-                            <li>Production Monitoring</li>
-                            <li>n8n</li>
-                        </ul>
-                    </article>
-                    <article class="skill-card">
-                        <h3>Game Development</h3>
-                        <ul class="chip-list">
-                            <li>Unreal Engine 5</li>
-                            <li>C++ Gameplay Systems</li>
-                            <li>Blueprints</li>
-                            <li>Unity</li>
-                            <li>Blender</li>
-                            <li>ShaderLab</li>
-                            <li>HLSL</li>
-                        </ul>
-                    </article>
-                    <article class="skill-card">
-                        <h3>Databases & APIs</h3>
-                        <ul class="chip-list">
-                            <li>PostgreSQL</li>
-                            <li>pgvector</li>
-                            <li>MySQL</li>
-                            <li>FastAPI</li>
-                            <li>REST APIs</li>
-                        </ul>
-                    </article>
-                    <article class="skill-card">
-                        <h3>Developer Tools</h3>
-                        <ul class="chip-list">
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>VS Code</li>
-                            <li>Google Colab</li>
-                            <li>Kaggle</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <div class="field">
+        <span class="field-label">// Corporation</span>
+        <span class="field-value">Softvence Δ</span>
+      </div>
 
-        <section class="section" id="projects">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Featured Projects</p>
-                    <h2>Projects</h2>
-                </div>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-visual project-visual--cyan">
-                            <span class="project-index">01</span>
-                            <p class="project-track">Language modeling</p>
-                            <h3>LLM From Scratch</h3>
-                            <p>PyTorch • Python</p>
-                        </div>
-                        <div class="project-content">
-                            <p class="project-meta">Foundational language model build</p>
-                            <p>Built a GPT-3-architecture language model from scratch in PyTorch and fine-tuned it for personal assistant tasks.</p>
-                            <ul class="project-points">
-                                <li>Custom SimpleTokenizerV2 with regex-based cleaning, vocabulary mapping, and unknown token handling.</li>
-                                <li>Processed 50,000+ tokens per second on consumer hardware.</li>
-                            </ul>
-                            <a href="https://github.com/NayeemHossenJim/LLM-From-Scratch" class="project-link" target="_blank" rel="noopener">View repository</a>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <div class="project-visual project-visual--violet">
-                            <span class="project-index">02</span>
-                            <p class="project-track">Efficient fine-tuning</p>
-                            <h3>Fine Tune LLM</h3>
-                            <p>Unsloth • Hugging Face • LoRA</p>
-                        </div>
-                        <div class="project-content">
-                            <p class="project-meta">Parameter-efficient adaptation</p>
-                            <p>Applied LoRA and QLoRA to fine-tune large language models with a lighter training footprint and faster iteration cycles.</p>
-                            <ul class="project-points">
-                                <li>Reduced GPU memory usage by 60% compared with full fine-tuning baselines.</li>
-                                <li>Cut training time to less than 20 minutes for new fine-tuning jobs.</li>
-                            </ul>
-                            <a href="https://github.com/NayeemHossenJim/Finetuning-Local-LLM" class="project-link" target="_blank" rel="noopener">View repository</a>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <div class="project-visual project-visual--emerald">
-                            <span class="project-index">03</span>
-                            <p class="project-track">Computer vision</p>
-                            <h3>Skin Cancer Detection</h3>
-                            <p>YOLO • FastAPI • JavaScript</p>
-                        </div>
-                        <div class="project-content">
-                            <p class="project-meta">Real-time medical vision system</p>
-                            <p>Developed a full-stack skin cancer detection system with model deployment, API integration, and a browser-based frontend.</p>
-                            <ul class="project-points">
-                                <li>Reached 91% detection accuracy across 5 cancer categories in the test dataset.</li>
-                                <li>Deployed on a VPS with sub-200 ms inference for live use.</li>
-                            </ul>
-                            <a href="https://github.com/NayeemHossenJim/Skin-Cancer-Detection" class="project-link" target="_blank" rel="noopener">View repository</a>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <div class="project-visual project-visual--amber">
-                            <span class="project-index">04</span>
-                            <p class="project-track">Multiplayer systems</p>
-                            <h3>Multiplayer Plugin</h3>
-                            <p>Unreal Engine 5 • C++</p>
-                        </div>
-                        <div class="project-content">
-                            <p class="project-meta">Modular networking plugin</p>
-                            <p>Built a modular multiplayer plugin in C++ for Unreal Engine with a focus on reusable architecture and multiplayer readiness.</p>
-                            <ul class="project-points">
-                                <li>Designed for Steam and Xbox-style multiplayer integration paths.</li>
-                                <li>Structured to support reusable plugin-based workflows.</li>
-                            </ul>
-                            <a href="https://github.com/NayeemHossenJim/MultiPlayer-Plugin" class="project-link" target="_blank" rel="noopener">View repository</a>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <div class="project-visual project-visual--rose">
-                            <span class="project-index">05</span>
-                            <p class="project-track">Gameplay systems</p>
-                            <h3>The Last Gods</h3>
-                            <p>Unreal Engine 5 • C++ • Blueprints</p>
-                        </div>
-                        <div class="project-content">
-                            <p class="project-meta">Third-person action game</p>
-                            <p>Developed a third-person action game in Unreal Engine 5 with dynamic combat, responsive controls, and immersive gameplay systems.</p>
-                            <ul class="project-points">
-                                <li>State-machine-driven enemy boss AI with 8 distinct attack patterns.</li>
-                                <li>Reduced player loop repetition by 50% in playtesting sessions.</li>
-                            </ul>
-                            <a href="https://github.com/NayeemHossenJim/The_Last_Gods" class="project-link" target="_blank" rel="noopener">View repository</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <div class="field">
+        <span class="field-label">// Availability</span>
+        <a class="chev-tag" href="#connection" data-tab="connection">
+          <span class="tag-label">Open for Hire</span>
+        </a>
+      </div>
 
-        <section class="section" id="experience">
-            <div class="container timeline-layout">
-                <div class="section-heading">
-                    <p class="eyebrow">Experience</p>
-                    <h2>Current role and impact</h2>
-                </div>
-                <div class="timeline">
-                    <article class="timeline-item">
-                        <p class="timeline-date">October 2025 - Present</p>
-                        <h3>Junior AI Engineer | Softvence Delta, Dhaka, Bangladesh</h3>
-                        <ul class="feature-list">
-                            <li>Architected and deployed production-grade RAG systems using LangChain and LangGraph, processing 100,000+ queries per month and driving a 30% increase in automated customer issue resolution.</li>
-                            <li>Fine-tuned Hugging Face Transformer models with LoRA and QLoRA for domain-specific NLP tasks, achieving a 40% reduction in inference latency and measurable gains in task accuracy.</li>
-                            <li>Established MLOps best practices across MLflow, DVC, CI/CD pipelines, and production monitoring, cutting deployment errors by 25%.</li>
-                            <li>Built AI automation workflows with n8n and 10+ third-party API integrations to remove manual data-handling steps.</li>
-                            <li>Developed a Bangla Sign Language detection model at the alphabet level using a custom YOLO dataset, reaching 87% detection accuracy in live-camera tests.</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <div class="field">
+        <span class="field-label">// Social</span>
+        <a class="btn-outline" href="https://github.com/NayeemHossenJim" target="_blank" rel="noopener">
+          <span>Open Connection</span>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M5 12h12M13 6l6 6-6 6" />
+          </svg>
+        </a>
+      </div>
 
-        <section class="section" id="education">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Education & Certifications</p>
-                    <h2>Education and credentials</h2>
-                </div>
-                <div class="credentials-grid">
-                    <article class="info-card">
-                        <h3>Education</h3>
-                        <ul class="feature-list compact-list">
-                            <li>B.Sc. in Computer Science and Engineering, Uttara University, Dhaka, Bangladesh</li>
-                            <li>CGPA: 3.5 / 4.0</li>
-                        </ul>
-                    </article>
-                    <article class="info-card">
-                        <h3>Certifications</h3>
-                        <ul class="feature-list compact-list">
-                            <li>AWS AI Practitioner Challenge – Udacity</li>
-                            <li>Advanced Learning Algorithms – Stanford University (Coursera)</li>
-                            <li>Supervised Machine Learning: Regression and Classification – Stanford University (Coursera)</li>
-                        </ul>
-                    </article>
-                    <article class="info-card">
-                        <h3>Awards & Leadership</h3>
-                        <ul class="feature-list compact-list">
-                            <li>12th Place – Game Jam Competition, BUET CSE Fest 2024</li>
-                            <li>Former Vice President – Machine Learning Club, Uttara University</li>
-                        </ul>
-                    </article>
-                </div>
+      <div class="motto">
+        <div class="motto-title">// Motto</div>
+        <div class="motto-body">Build systems that ship — not just demos.</div>
+      </div>
+    </aside>
+
+    <!-- =================== CENTER (panels) =================== -->
+    <main class="center">
+      <span class="cbr" aria-hidden="true"></span>
+
+      <!-- ----- BEGINNING ----- -->
+      <section class="panel is-active" id="panel-beginning" data-panel="beginning">
+        <div class="panel-inner">
+          <div class="beginning">
+
+            <!-- top caption strip, like the figma whale-caption -->
+            <div class="hero-caption">
+              <p class="hero-caption-main">
+                Shipping production-grade AI systems and Unreal Engine gameplay — one year deep, all receipts on GitHub.
+              </p>
+              <p class="hero-caption-sub">// Portrait composed in-engine · NHJ · 2026</p>
             </div>
-        </section>
+
+            <!-- contained hero frame, NOT full bleed -->
+            <div class="hero-frame">
+              <div class="hero-frame-grid" aria-hidden="true"></div>
+              <img class="hero-frame-img" src="assets/jim.png" alt="Nayeem Hossen Jim — main portrait" />
+              <div class="hero-frame-vignette" aria-hidden="true"></div>
+              <div class="hero-frame-corners" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="hero-frame-meta">
+                <span>// PORTRAIT_01</span>
+                <span>RGB · 1024×1024</span>
+                <span>ENC · OK</span>
+              </div>
+            </div>
+
+            <!-- bottom name plate -->
+            <div class="hero-nameplate">
+              <div class="hero-nameplate-role">// PLAYER PROFILE</div>
+              <h1 class="hero-nameplate-name">
+                NAYEEM HOSSEN <span class="hero-nameplate-tail">JIM</span>
+              </h1>
+              <div class="hero-nameplate-sub">
+                <span>// AI Engineer</span>
+                <span class="dot">·</span>
+                <span>// Unreal Engine 5</span>
+                <span class="dot">·</span>
+                <span class="green">// Class · Builder</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ----- LOGS ----- -->
+      <section class="panel" id="panel-logs" data-panel="logs">
+        <div class="panel-inner">
+          <div class="logs">
+            <div class="section-head">
+              <h2 class="section-head-title"><span class="red">// 02</span> &nbsp; Data Logs — <em>where I’ve been</em>
+              </h2>
+              <span class="section-head-meta">3 entries · 2023 → now</span>
+            </div>
+
+            <ol class="log-list">
+              <li class="log-item">
+                <div class="log-when">
+                  Oct ’25
+                  <span class="now">→ active</span>
+                </div>
+                <div class="log-body">
+                  <div class="log-where">// Role · Dhaka, Bangladesh</div>
+                  <div class="log-title">Junior AI Engineer — <em>Softvence Δ</em></div>
+                  <ul class="log-bullets">
+                    <li>Architected production-grade RAG with LangChain / LangGraph — <strong>100k+ queries /
+                        month</strong>, +30% automated customer issue resolution.</li>
+                    <li>Fine-tuned Hugging Face Transformers with LoRA / QLoRA — <strong>40% lower inference
+                        latency</strong>.</li>
+                    <li>Established MLOps practice across MLflow, DVC, CI/CD &amp; monitoring — <strong>−25% deployment
+                        errors</strong>.</li>
+                    <li>Built AI automation flows with n8n &amp; 10+ API integrations, removing manual data-handling
+                      steps.</li>
+                    <li>Trained a Bangla Sign Language detector on custom YOLO data — <strong>87% live
+                        accuracy</strong>.</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="log-item">
+                <div class="log-when">2023 — ’26</div>
+                <div class="log-body">
+                  <div class="log-where">// Education · Dhaka, Bangladesh</div>
+                  <div class="log-title">B.Sc., CSE — <em>Uttara University</em></div>
+                  <ul class="log-bullets">
+                    <li>CGPA <strong>3.5 / 4.0</strong>.</li>
+                    <li>Former Vice President — Machine Learning Club.</li>
+                    <li><strong>12th place</strong> — Game Jam, BUET CSE Fest 2024.</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="log-item">
+                <div class="log-when">Side Quests</div>
+                <div class="log-body">
+                  <div class="log-where">// Continuing education · ongoing</div>
+                  <div class="log-title">Certifications &amp; <em>training arcs</em></div>
+                  <ul class="log-bullets">
+                    <li>AWS AI Practitioner Challenge — Udacity</li>
+                    <li>Advanced Learning Algorithms — Stanford / Coursera</li>
+                    <li>Supervised ML: Regression &amp; Classification — Stanford / Coursera</li>
+                  </ul>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----- ACHIEVEMENTS ----- -->
+      <section class="panel" id="panel-achievements" data-panel="achievements">
+        <div class="panel-inner">
+          <div class="ach-wrap">
+            <div class="section-head">
+              <h2 class="section-head-title"><span class="red">// 03</span> &nbsp; Achievements — <em>tracked
+                  metrics</em></h2>
+              <span class="section-head-meta">production · verified · 2025–26</span>
+            </div>
+
+            <div class="ach-stats">
+              <div class="ach-stat">
+                <div class="ach-stat-key">// Experience</div>
+                <div class="ach-stat-val">1<span class="unit">+ yr</span></div>
+                <div class="ach-stat-cap">Shipping AI &amp; gameplay in production.</div>
+              </div>
+              <div class="ach-stat">
+                <div class="ach-stat-key">// Inference</div>
+                <div class="ach-stat-val">40<span class="unit">%</span></div>
+                <div class="ach-stat-cap">Latency cut after LoRA / QLoRA fine-tuning.</div>
+              </div>
+              <div class="ach-stat">
+                <div class="ach-stat-key">// Vision</div>
+                <div class="ach-stat-val">91<span class="unit">%</span></div>
+                <div class="ach-stat-cap">Accuracy on real-time skin-cancer detection.</div>
+              </div>
+              <div class="ach-stat">
+                <div class="ach-stat-key">// Scale</div>
+                <div class="ach-stat-val">100<span class="unit">k+</span></div>
+                <div class="ach-stat-cap">Monthly RAG queries served in production.</div>
+              </div>
+            </div>
+
+            <div class="ach-certs">
+              <h4>// Side-quest badges</h4>
+              <div class="cert-row">
+                <span class="idx">01</span>
+                <span class="what">AWS AI Practitioner Challenge</span>
+                <span class="who">Udacity</span>
+              </div>
+              <div class="cert-row">
+                <span class="idx">02</span>
+                <span class="what">Advanced Learning Algorithms</span>
+                <span class="who">Stanford · Coursera</span>
+              </div>
+              <div class="cert-row">
+                <span class="idx">03</span>
+                <span class="what">Supervised ML: Regression &amp; Classification</span>
+                <span class="who">Stanford · Coursera</span>
+              </div>
+              <div class="cert-row">
+                <span class="idx">04</span>
+                <span class="what">Game Jam — 12th place</span>
+                <span class="who">BUET CSE Fest 2024</span>
+              </div>
+              <div class="cert-row">
+                <span class="idx">05</span>
+                <span class="what">VP — Machine Learning Club</span>
+                <span class="who">Uttara University</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----- CREATIONS ----- -->
+      <section class="panel" id="panel-creations" data-panel="creations">
+        <div class="panel-inner">
+          <div class="creations">
+            <div class="section-head">
+              <h2 class="section-head-title"><span class="red">// 04</span> &nbsp; Creations — <em>things I’ve
+                  shipped</em></h2>
+              <span class="section-head-meta">5 projects · all on GitHub</span>
+            </div>
+
+            <div class="creations-grid">
+              <!-- 01 FEATURE -->
+              <a class="proj proj-feature" href="https://github.com/NayeemHossenJim/LLM-From-Scratch" target="_blank"
+                rel="noopener">
+                <div class="proj-head">
+                  <span class="proj-num">01</span>
+                  <span class="proj-tag">Language modelling</span>
+                </div>
+                <h3 class="proj-title">LLM From Scratch</h3>
+                <div class="proj-viz">
+                  <div class="viz-tokens">
+                    <span>def</span><span>tok</span><span>v2</span><span>↓</span><span>50k</span><span>tps</span>
+                    <span>gpt</span><span>·</span><span>emb</span><span>attn</span><span>norm</span><span>→</span>
+                    <span>loss</span><span>0.32</span><span>↓</span><span>★</span><span>lr</span><span>3e-4</span>
+                  </div>
+                </div>
+                <p class="proj-desc">Built a GPT-3-architecture model from the ground up in PyTorch with a custom regex
+                  tokenizer, then fine-tuned for personal-assistant tasks. 50,000+ tokens / second on consumer hardware.
+                </p>
+                <div class="proj-stack">// PyTorch · Python · SimpleTokenizerV2</div>
+                <span class="proj-arrow">↗</span>
+              </a>
+
+              <!-- 02 -->
+              <a class="proj proj-med" href="https://github.com/NayeemHossenJim/Finetuning-Local-LLM" target="_blank"
+                rel="noopener">
+                <div class="proj-head">
+                  <span class="proj-num">02</span>
+                  <span class="proj-tag">Fine-tuning</span>
+                </div>
+                <h3 class="proj-title">Fine-Tune LLM</h3>
+                <div class="proj-viz">
+                  <div class="viz-bars">
+                    <span style="height:88%"></span>
+                    <span style="height:62%"></span>
+                    <span style="height:46%"></span>
+                    <span style="height:32%"></span>
+                    <span style="height:24%"></span>
+                  </div>
+                </div>
+                <p class="proj-desc">LoRA &amp; QLoRA adaptation of large language models — lighter training footprint,
+                  faster iteration.</p>
+                <div class="proj-stack">// Unsloth · HF · LoRA</div>
+                <span class="proj-arrow">↗</span>
+              </a>
+
+              <!-- 03 -->
+              <a class="proj proj-med" href="https://github.com/NayeemHossenJim/Skin-Cancer-Detection" target="_blank"
+                rel="noopener">
+                <div class="proj-head">
+                  <span class="proj-num">03</span>
+                  <span class="proj-tag">Vision</span>
+                </div>
+                <h3 class="proj-title">Skin Cancer Detection</h3>
+                <div class="proj-viz">
+                  <div class="viz-scan"></div>
+                </div>
+                <p class="proj-desc">Full-stack medical-vision system — model, API, browser-based UI, deployed on a VPS
+                  for live use.</p>
+                <div class="proj-stack">// YOLO · FastAPI · JS</div>
+                <span class="proj-arrow">↗</span>
+              </a>
+
+              <!-- 04 WIDE -->
+              <a class="proj proj-wide" href="https://github.com/NayeemHossenJim/Unreal-Engine-Multiplayer-Plugin"
+                target="_blank" rel="noopener">
+                <div class="proj-head">
+                  <span class="proj-num">04</span>
+                  <span class="proj-tag">Networking</span>
+                </div>
+                <h3 class="proj-title">Multiplayer Plugin</h3>
+                <div class="proj-viz">
+                  <div class="viz-net">
+                    <svg viewBox="0 0 320 90" preserveAspectRatio="none">
+                      <g fill="none" stroke="currentColor" stroke-width="1.2">
+                        <circle cx="40" cy="45" r="6" />
+                        <circle cx="160" cy="20" r="6" />
+                        <circle cx="280" cy="45" r="6" />
+                        <circle cx="160" cy="70" r="6" />
+                        <line x1="46" y1="43" x2="154" y2="22" />
+                        <line x1="46" y1="47" x2="154" y2="68" />
+                        <line x1="166" y1="22" x2="274" y2="43" />
+                        <line x1="166" y1="68" x2="274" y2="47" />
+                        <line x1="160" y1="26" x2="160" y2="64" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <p class="proj-desc">Modular C++ plugin for Unreal Engine — reusable arch with paths to Steam &amp;
+                  Xbox-style integration.</p>
+                <div class="proj-stack">// Unreal Engine 5 · C++</div>
+                <span class="proj-arrow">↗</span>
+              </a>
+
+              <!-- 05 WIDE -->
+              <a class="proj proj-wide" href="https://github.com/NayeemHossenJim/The_Last_Gods" target="_blank"
+                rel="noopener">
+                <div class="proj-head">
+                  <span class="proj-num">05</span>
+                  <span class="proj-tag">Gameplay</span>
+                </div>
+                <h3 class="proj-title">The Last Gods</h3>
+                <div class="proj-viz">
+                  <div class="viz-fsm">
+                    <span>idle</span><span>chase</span><span class="on">strike</span><span>parry</span><span>flee</span>
+                  </div>
+                </div>
+                <p class="proj-desc">Third-person action game — dynamic combat, responsive controls, FSM-driven boss AI
+                  w/ 8 attack patterns.</p>
+                <div class="proj-stack">// UE5 · C++ · Blueprints</div>
+                <span class="proj-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----- CONNECTION ----- -->
+      <section class="panel" id="panel-connection" data-panel="connection">
+        <div class="panel-inner">
+          <div class="conn">
+            <div class="section-head">
+              <h2 class="section-head-title"><span class="red">// 05</span> &nbsp; Open connection — <em>let’s talk</em>
+              </h2>
+              <span class="section-head-meta">latency: instant · status: ready</span>
+            </div>
+
+            <h3 class="conn-headline">
+              Got an <em>AI system</em> or a <em>game</em> that needs to <span class="hl">actually ship</span>?
+            </h3>
+
+            <div class="conn-grid">
+              <a class="conn-primary" href="mailto:nayeemhossenjim@gmail.com">
+                <div>
+                  <div class="conn-primary-label">// Preferred channel · email</div>
+                  <div class="conn-primary-mail">nayeemhossenjim<wbr/>@gmail.com</div>
+                </div>
+                <div class="conn-primary-foot">// Reply within 24h. Dhaka · UTC+6.</div>
+                <span class="conn-primary-arrow">↗</span>
+              </a>
+
+              <ul class="conn-list">
+                <li>
+                  <a class="conn-row" href="https://github.com/NayeemHossenJim" target="_blank" rel="noopener">
+                    <span class="idx">01</span>
+                    <span class="key">GitHub</span>
+                    <span class="val">@NayeemHossenJim</span>
+                    <span class="arr">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="conn-row" href="https://www.linkedin.com/in/nayeem-hossen-jim" target="_blank"
+                    rel="noopener">
+                    <span class="idx">02</span>
+                    <span class="key">LinkedIn</span>
+                    <span class="val">nayeem-hossen-jim</span>
+                    <span class="arr">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="conn-row" href="https://www.kaggle.com/nayeemhossenjim" target="_blank" rel="noopener">
+                    <span class="idx">03</span>
+                    <span class="key">Kaggle</span>
+                    <span class="val">@nayeemhossenjim</span>
+                    <span class="arr">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="conn-row" href="https://medium.com/@nayeemhossenjim" target="_blank" rel="noopener">
+                    <span class="idx">04</span>
+                    <span class="key">Medium</span>
+                    <span class="val">@nayeemhossenjim</span>
+                    <span class="arr">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="conn-row" href="https://orcid.org/0009-0007-2524-7447" target="_blank" rel="noopener">
+                    <span class="idx">05</span>
+                    <span class="key">ORCID</span>
+                    <span class="val">0009-0007-2524-7447</span>
+                    <span class="arr">↗</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
-    <footer class="footer">
-        <div class="container footer-inner">
-            <p>&copy; 2026 Nayeem Hossen Jim. Portfolio built around shipped work, public repositories, and measurable results.</p>
-            <div class="footer-links">
-                <a href="#home">Top</a>
-                <a href="https://github.com/NayeemHossenJim" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://www.linkedin.com/in/nayeem-hossen-jim" target="_blank" rel="noopener">LinkedIn</a>
-            </div>
+    <!-- =================== RIGHT RAIL =================== -->
+    <aside class="right">
+      <div class="quest">
+        <div class="quest-banner">
+          <span>Active Quest</span>
+          <span class="quest-banner-close" aria-hidden="true">✕</span>
         </div>
-    </footer>
+        <div class="quest-body">
+          <div class="quest-sub" id="quest-sub">The portfolio skill-up line</div>
+
+          <div class="quest-block">
+            <div class="quest-key">// Quest name</div>
+            <div class="quest-val" id="quest-name">RAG @ scale</div>
+          </div>
+
+          <div class="quest-block">
+            <div class="quest-key">// Goal</div>
+            <div class="quest-text" id="quest-goal">
+              Ship LangGraph-backed retrieval for production support — sub-second p95 over a 100k-doc corpus, fully
+              observable, evaluated.
+            </div>
+          </div>
+
+          <div class="quest-block">
+            <div class="quest-key">// Rewards</div>
+            <div class="quest-rewards">
+              <div class="reward" data-plus="+40%" aria-label="Latency reward">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+                  <path d="M12 3 L20 12 L12 21 L4 12 Z" />
+                  <path d="M12 7 L16 12 L12 17 L8 12 Z" />
+                </svg>
+              </div>
+              <div class="reward" data-plus="−25%" aria-label="Errors reward">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+                  <path d="M4 6 L20 6 L20 18 L4 18 Z" />
+                  <path d="M4 6 L12 14 L20 6" />
+                </svg>
+              </div>
+              <div class="reward" data-plus="+30%" aria-label="Resolution reward">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+                  <path d="M12 3 L14 9 L20 9 L15 13 L17 20 L12 16 L7 20 L9 13 L4 9 L10 9 Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stack-card">
+        <h5>// Stack — current loadout</h5>
+        <div class="stack-row"><span>LangChain · LangGraph</span><span class="lvl">S</span></div>
+        <div class="stack-row"><span>PyTorch · HuggingFace</span><span class="lvl">S</span></div>
+        <div class="stack-row"><span>LoRA · QLoRA · Unsloth</span><span class="lvl">A</span></div>
+        <div class="stack-row"><span>YOLO · OpenCV</span><span class="lvl">A</span></div>
+        <div class="stack-row"><span>Unreal Engine 5 · C++</span><span class="lvl">A</span></div>
+        <div class="stack-row"><span>FastAPI · pgvector</span><span class="lvl">A</span></div>
+        <div class="stack-row"><span>MLflow · DVC · Docker</span><span class="lvl">B</span></div>
+      </div>
+
+      <div class="settings">
+        <div class="settings-row">
+          <span>Sound effects</span>
+          <span class="box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square">
+              <polyline points="4 12 10 18 20 6" />
+            </svg>
+          </span>
+        </div>
+        <div class="settings-row off">
+          <span>Music</span>
+          <span class="box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square">
+              <line x1="5" y1="5" x2="19" y2="19" />
+              <line x1="19" y1="5" x2="5" y2="19" />
+            </svg>
+          </span>
+        </div>
+        <div class="settings-row">
+          <span>Visual settings</span>
+          <span class="box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- =================== BOTTOM TAB BAR =================== -->
+    <nav class="bottom" aria-label="Sections">
+      <button class="tab is-active" data-tab="beginning">
+        <span class="tab-num">01</span>
+        <span class="tab-title">Beginning</span>
+        <span class="tab-sub">Player profile · intro</span>
+      </button>
+      <button class="tab" data-tab="logs">
+        <span class="tab-num">02</span>
+        <span class="tab-title">Logs</span>
+        <span class="tab-sub">Work history · arc</span>
+      </button>
+      <button class="tab" data-tab="achievements">
+        <span class="tab-num">03</span>
+        <span class="tab-title">Achievements</span>
+        <span class="tab-sub">Stats · certs</span>
+      </button>
+      <button class="tab" data-tab="creations">
+        <span class="tab-num">04</span>
+        <span class="tab-title">Creations</span>
+        <span class="tab-sub">Projects · builds</span>
+      </button>
+      <button class="tab" data-tab="connection">
+        <span class="tab-num">05</span>
+        <span class="tab-title">Connection</span>
+        <span class="tab-sub">Contact · channels</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <script>
+    // ---------- Tab switching ----------
+    const tabs = document.querySelectorAll('.tab');
+    const panels = document.querySelectorAll('.panel');
+    const questData = {
+      beginning: {
+        sub: 'The portfolio skill-up line',
+        name: 'RAG @ scale',
+        goal: 'Ship LangGraph-backed retrieval for production support — sub-second p95 over a 100k-doc corpus, fully observable, evaluated.',
+      },
+      logs: {
+        sub: 'Operations review',
+        name: 'Production hardening',
+        goal: 'Continue building out MLOps practice — model versioning, drift monitoring, CI/CD across the deployment surface.',
+      },
+      achievements: {
+        sub: 'Stat tracker',
+        name: 'Push p95 → <250ms',
+        goal: 'Next milestone — get LoRA-tuned model inference under 250ms p95 on commodity GPUs without quality regression.',
+      },
+      creations: {
+        sub: 'Build queue',
+        name: 'Open-source LLM tooling',
+        goal: 'Ship a public LangGraph + Unsloth scaffold so others can spin up a fine-tuned RAG stack in under a day.',
+      },
+      connection: {
+        sub: 'Open channel',
+        name: 'Ready to hire',
+        goal: 'Looking for a mid-level AI engineering role — RAG, LLM fine-tuning, MLOps. Bonus: anything game-adjacent.',
+      },
+    };
+
+    function activate(key) {
+      tabs.forEach(t => t.classList.toggle('is-active', t.dataset.tab === key));
+      panels.forEach(p => p.classList.toggle('is-active', p.dataset.panel === key));
+
+      const q = questData[key];
+      if (q) {
+        document.getElementById('quest-sub').textContent = q.sub;
+        document.getElementById('quest-name').textContent = q.name;
+        document.getElementById('quest-goal').textContent = q.goal;
+      }
+      history.replaceState(null, '', '#' + key);
+    }
+
+    tabs.forEach(t => t.addEventListener('click', () => activate(t.dataset.tab)));
+
+    // Availability tag routes to connection panel
+    document.querySelectorAll('[data-tab]').forEach(el => {
+      if (el.tagName !== 'BUTTON') {
+        el.addEventListener('click', (e) => {
+          if (questData[el.dataset.tab]) {
+            e.preventDefault();
+            activate(el.dataset.tab);
+          }
+        });
+      }
+    });
+
+    // Restore from hash
+    const initial = (location.hash || '').replace('#', '');
+    if (questData[initial]) activate(initial);
+
+    // ---------- Live clock — Dhaka, UTC+6 ----------
+    function tick() {
+      const now = new Date();
+      const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+      const dhaka = new Date(utc + 6 * 3600 * 1000);
+      const hh = String(dhaka.getHours()).padStart(2, '0');
+      const mm = String(dhaka.getMinutes()).padStart(2, '0');
+      document.getElementById('local-time').textContent = hh + ':' + mm;
+    }
+    tick();
+    setInterval(tick, 30 * 1000);
+
+    // ---------- Keyboard nav (←/→) ----------
+    const order = ['beginning', 'logs', 'achievements', 'creations', 'connection'];
+    document.addEventListener('keydown', (e) => {
+      if (e.target.matches('input, textarea')) return;
+      const activeTab = document.querySelector('.tab.is-active');
+      if (!activeTab) return;
+      const active = activeTab.dataset.tab;
+      const i = order.indexOf(active);
+      if (e.key === 'ArrowRight' && i < order.length - 1) activate(order[i + 1]);
+      if (e.key === 'ArrowLeft' && i > 0) activate(order[i - 1]);
+    });
+  </script>
 </body>
+
 </html>
