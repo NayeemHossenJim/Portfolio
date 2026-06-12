@@ -304,9 +304,9 @@ canvas#bg {
 }
 
 .timeline-item.active .timeline-dot {
-    background: #6c8aff;
-    border-color: #6c8aff;
-    box-shadow: 0 0 12px rgba(108, 138, 255, 0.5);
+    background: #fff;
+    border-color: #fff;
+    box-shadow: none;
 }
 
 body.light-mode .timeline-dot {
@@ -315,9 +315,9 @@ body.light-mode .timeline-dot {
 }
 
 body.light-mode .timeline-item.active .timeline-dot {
-    background: #4a6aff;
-    border-color: #4a6aff;
-    box-shadow: 0 0 12px rgba(74, 106, 255, 0.4);
+    background: #111;
+    border-color: #111;
+    box-shadow: none;
 }
 
 .timeline-date {
