@@ -265,6 +265,99 @@ canvas#bg {
     color: var(--text-color);
 }
 
+/* Experience Timeline */
+.timeline {
+    position: relative;
+    padding-left: 32px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    bottom: 0;
+    width: 1px;
+    background: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -32px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    border: 2px solid var(--border-color);
+    z-index: 1;
+    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item.active .timeline-dot {
+    background: #6c8aff;
+    border-color: #6c8aff;
+    box-shadow: 0 0 12px rgba(108, 138, 255, 0.5);
+}
+
+body.light-mode .timeline-dot {
+    background: rgba(0, 0, 0, 0.15);
+    border-color: var(--border-color);
+}
+
+body.light-mode .timeline-item.active .timeline-dot {
+    background: #4a6aff;
+    border-color: #4a6aff;
+    box-shadow: 0 0 12px rgba(74, 106, 255, 0.4);
+}
+
+.timeline-date {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--highlight-color);
+    margin-bottom: 8px;
+}
+
+.timeline-title {
+    font-family: var(--font-mono);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--text-color);
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.timeline-company {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--highlight-color);
+    margin-bottom: 12px;
+    letter-spacing: 0.3px;
+}
+
+.timeline-desc {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--highlight-color);
+    max-width: 480px;
+}
+
 .contact-links {
     display: flex;
     flex-direction: column;
