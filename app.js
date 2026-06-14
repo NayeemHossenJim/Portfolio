@@ -20,26 +20,46 @@ fontToggle.addEventListener('click', () => {
     fontToggle.textContent = isMono ? "MONOSPACED" : "MONOSPACED";
 });
 
-// Update active state in nav based on scroll position (Optional but nice to have since we added the dot)
+// --- Navigation/Routing logic ---
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav li');
 
-window.addEventListener('scroll', () => {
-    let current = '';
+function showSection(sectionId) {
+    let activeId = sectionId || 'about';
+    
+    // Remove active class from all sections
     sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 150) {
-            current = section.getAttribute('id');
-        }
+        section.classList.remove('active');
     });
-
+    
+    // Show active section
+    const targetSection = document.getElementById(activeId);
+    if (targetSection) {
+        targetSection.classList.add('active');
+    }
+    
+    // Update active nav link dot indicator
     navLinks.forEach(li => {
         li.classList.remove('active');
-        if (li.querySelector('a').getAttribute('href') === `#${current}`) {
+        const anchor = li.querySelector('a');
+        if (anchor && anchor.getAttribute('href') === `#${activeId}`) {
             li.classList.add('active');
         }
     });
+
+    // Reset scroll position when switching tabs
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Router Event Listeners
+window.addEventListener('hashchange', () => {
+    const sectionId = window.location.hash.substring(1);
+    showSection(sectionId);
 });
+
+// Run once on load to resolve the initial hash
+const initialSectionId = window.location.hash.substring(1);
+showSection(initialSectionId);
 
 // --- WebGL Background Logic ---
 // We want to mimic the dense, static/film grain dust effect concentrated dynamically.
@@ -158,3 +178,93 @@ function animate(t) {
 }
 
 animate(0);
+
+// --- Contact Section Interactivity ---
+
+
+// 2. Auto-expanding Textarea for Message input
+const messageTextarea = document.getElementById('form-message');
+if (messageTextarea) {
+    messageTextarea.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = this.scrollHeight + 'px';
+    });
+}
+
+// 3. Clean Form Submission Simulation
+const contactForm = document.getElementById('contact-form');
+const submitBtn = document.getElementById('form-submit');
+const formStatus = document.getElementById('form-status');
+
+if (contactForm && submitBtn && formStatus) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const nameInput = document.getElementById('form-name');
+        const emailInput = document.getElementById('form-email');
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim();
+        const message = messageTextarea.value.trim();
+        
+        if (!name || !email || !message) {
+            formStatus.className = 'form-status error';
+            formStatus.textContent = 'Please fill out all fields.';
+            return;
+        }
+        
+        // Disabled State during sending
+        submitBtn.disabled = true;
+        nameInput.disabled = true;
+        emailInput.disabled = true;
+        messageTextarea.disabled = true;
+        
+        const originalBtnHtml = submitBtn.innerHTML;
+        submitBtn.innerHTML = `<span class="btn-text">Sending...</span><span class="btn-icon">⋯</span>`;
+        formStatus.className = 'form-status';
+        formStatus.textContent = 'Initiating message dispatch...';
+        
+        // Mock API request delay
+        setTimeout(() => {
+            submitBtn.disabled = false;
+            nameInput.disabled = false;
+            emailInput.disabled = false;
+            messageTextarea.disabled = false;
+            submitBtn.innerHTML = originalBtnHtml;
+            
+            formStatus.className = 'form-status success';
+            formStatus.textContent = 'Message sent successfully. Thank you.';
+            
+            // Clear inputs
+            contactForm.reset();
+            if (messageTextarea) {
+                messageTextarea.style.height = 'auto';
+            }
+            
+            // Clear status after 5 seconds
+            setTimeout(() => {
+                formStatus.textContent = '';
+                formStatus.className = 'form-status';
+            }, 5000);
+        }, 1800);
+    });
+}
+
+// 4. Copy Email to Clipboard
+const copyBtn = document.getElementById('copy-email-btn');
+if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+        const email = 'nayeemhossenjim@gmail.com';
+        navigator.clipboard.writeText(email).then(() => {
+            const originalText = copyBtn.textContent;
+            copyBtn.textContent = 'Copied';
+            copyBtn.classList.add('copied');
+            
+            setTimeout(() => {
+                copyBtn.textContent = originalText;
+                copyBtn.classList.remove('copied');
+            }, 2000);
+        }).catch(err => {
+            console.error('Failed to copy email: ', err);
+        });
+    });
+}

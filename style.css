@@ -15,6 +15,8 @@
     --font-primary: 'Inter', sans-serif;
     --font-mono: 'Space Mono', monospace;
     --current-font: var(--font-primary);
+    
+    --status-color: #00ff88;
 }
 
 body.light-mode {
@@ -23,6 +25,8 @@ body.light-mode {
     --highlight-color: #555;
     --border-color: rgba(0, 0, 0, 0.2);
     --link-hover: rgba(0, 0, 0, 0.5);
+    
+    --status-color: #008f4f;
 }
 
 body.mono-font {
@@ -197,9 +201,25 @@ canvas#bg {
 .section {
     padding-top: 100px;
     min-height: 80vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
+}
+
+.section.active {
+    display: flex;
+    animation: fadeInSection 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes fadeInSection {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .section-title {
@@ -219,8 +239,41 @@ canvas#bg {
     color: var(--text-color);
 }
 
+.about-text p.intro-para {
+    font-size: 18.5px;
+    line-height: 1.65;
+    border-left: 2px solid var(--border-color);
+    padding-left: 20px;
+    margin-bottom: 28px;
+}
+
 .about-text .highlight {
     font-weight: 500;
+}
+
+.about-text .tech-highlight {
+    font-family: var(--font-mono);
+    font-size: 13.5px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    padding: 2px 6px;
+    margin: 0 1px;
+    font-weight: 400;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+body.light-mode .about-text .tech-highlight {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.about-text .tech-highlight:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--text-color);
+}
+
+body.light-mode .about-text .tech-highlight:hover {
+    background-color: rgba(0, 0, 0, 0.08);
 }
 
 .project {
@@ -358,23 +411,275 @@ body.light-mode .timeline-item.active .timeline-dot {
     max-width: 480px;
 }
 
-.contact-links {
+/* Contact Widget & Form Styles */
+.contact-status-widget {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+    color: var(--highlight-color);
+    text-transform: uppercase;
+}
+
+.status-pulse {
+    position: relative;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--status-color);
+    border-radius: 50%;
+}
+
+.status-pulse::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--status-color);
+    border-radius: 50%;
+    animation: statusPulseAnimation 2s infinite ease-out;
+    opacity: 0;
+}
+
+@keyframes statusPulseAnimation {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+.status-divider {
+    color: var(--border-color);
+    margin: 0 4px;
+}
+
+.contact-form {
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.form-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input,
+.form-group textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-family: var(--current-font);
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 0;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+    resize: none;
+    overflow-y: hidden;
+    min-height: 40px;
+}
+
+.form-group label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--highlight-color);
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Float the label */
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:not(:placeholder-shown) ~ label {
+    top: -16px;
+    font-size: 11px;
+    font-family: var(--font-mono);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+/* Form line animation on focus */
+.form-line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: var(--text-color);
+    transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), left 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.form-group input:focus ~ .form-line,
+.form-group textarea:focus ~ .form-line {
+    width: 100%;
+    left: 0;
+}
+
+.submit-btn {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-color: var(--text-color);
+}
+
+.submit-btn .btn-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover .btn-icon {
+    transform: translate(2px, -2px);
+}
+
+.submit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    border-color: var(--border-color) !important;
+}
+
+.form-status {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    min-height: 16px;
+    transition: color 0.3s ease;
+}
+
+.form-status.success {
+    color: var(--status-color);
+}
+
+.form-status.error {
+    color: #ff4a4a;
+}
+
+.contact-footer {
+    border-top: 1px solid var(--border-color);
+    padding-top: 40px;
+    margin-top: 40px;
+}
+
+.contact-label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--highlight-color);
+    margin-bottom: 20px;
+}
+
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
     gap: 15px;
 }
 
-.contact-links a {
+.contact-anchor {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
-    width: fit-content;
-    transition: opacity 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease;
 }
 
-.contact-links a:hover {
-    opacity: 0.5;
+.contact-anchor:hover {
+    color: var(--highlight-color);
+}
+
+.contact-anchor .arrow {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--highlight-color);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-anchor:hover .arrow {
+    transform: translate(2px, -2px);
+    color: var(--text-color);
+}
+
+.copy-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--highlight-color);
+    font-family: var(--font-mono);
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+}
+
+.copy-btn:hover {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+.copy-btn.copied {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-color: var(--text-color);
 }
 
 /* Responsiveness */
